@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo ---------------------------------------
+echo -n "You are logged in as which user: "
+whoami
+echo --------------------------------------
+
+echo -n "In which directory you are: "
+pwd
+echo ---------------------------------------
+
+echo -n "In which Terminal you are working"
+echo $TERM
+echo --------------------------------------
+
+echo -n "Total number of files and directories in current directory: "
+ls|sort|wc -l
